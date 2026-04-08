@@ -16,10 +16,11 @@
     <div class="container">
         <p></p>
         <div class="before-header logo-bawah py-4 ">
-            <a href="http://linktr.ee/" target="_blank"style="width: 5%;">
+            <a href="http://linktr.ee/" target="_blank" style="width: 5%;">
                 <img src="tree-deciduous.png" class="logo-atas" alt="LinkTree">
-            </a >
-            <a href="https://linktr.ee/Agni.Graph" target="_blank" style="width: 5%;"><img src="screen-share.png" class="logo-atas" alt="Gmail">
+            </a>
+            <a href="https://linktr.ee/Agni.Graph" target="_blank" style="width: 5%;"><img src="screen-share.png"
+                    class="logo-atas" alt="Gmail">
             </a>
 
         </div>
@@ -29,7 +30,7 @@
             <p></p>
             <img src="ITU DIA.png" class="profile" alt="logo">
             <p></p>
-            <p><b>@Agni.Graph</b></p>
+            <p><b id="Intro">@Agni.Graph</b></p>
             <p>From Imagination to Reality</p>
         </div>
         <div class="MainSection">
@@ -41,15 +42,15 @@
             <div>
                 <a href="https://bit.ly/BookPhotoEvent" target="_blank"
                     class="btn btn-outline-warning btn-block rounded-pill linkFont py-3">
-                    Cosplay Event Photoshoot 
+                    Cosplay Event Photoshoot
                 </a>
                 <a href="https://bit.ly/BookPhotoEvent" target="_blank"
                     class="btn btn-outline-warning btn-block rounded-pill linkFont py-3">
-                    Cosplay Event Photoshoot 
+                    Cosplay Event Photoshoot
                 </a>
-                
+
                 <p></p>
-                
+
             </div>
 
 
@@ -78,6 +79,8 @@
                 </a>
                 <p></p>
             </div>
+
+
             <div>
                 <a href="https://bit.ly/Portfolio_2025_AgniGraph" target="_blank"
                     class="btn btn-outline-warning btn-block rounded-pill linkFont py-3">
@@ -85,6 +88,28 @@
                 </a>
                 <p></p>
             </div>
+
+            <div>
+                <a href="#" onclick="showme()" class="btn btn-info btn-block rounded-pill linkFont py-3">
+                    SHOW ME
+                </a>
+                <p></p>
+            </div>
+
+            <div>
+                <a onclick="changeText()" class="btn btn-info btn-block rounded-pill linkFont py-3">
+                    CHANGE TEXT
+                </a>
+                <p></p>
+            </div>
+
+            <div>
+                <a onclick="changeStyle()" class="btn btn-info btn-block rounded-pill linkFont py-3">
+                    CHANGE STYLE
+                </a>
+                <p></p>
+            </div>
+
             <p><b>Contact us</b></p>
 
             <div class="logo-bawah pb-5 ">
@@ -95,7 +120,7 @@
 
         </div>
         <div class="pb-4">
-            <a href="https://bit.ly/BookPhotoEvent" target="_blank"
+            <a id="Tombol" href="https://bit.ly/BookPhotoEvent" target="_blank"
                 class="btn btn-light rounded-pill linkFont py-2 shadow">
                 Join Agni.Graph on Linktree
             </a>
@@ -107,6 +132,34 @@
 
     </div>
 
+
+    <!-- Letakkan script di sini, sebelum </body> -->
+    <script>
+        function showme() {
+            // alert("Halo Selamat Siang");
+
+            Swal.fire({
+                title: "Good job!",
+                text: "You clicked the button!",
+                icon: "success"
+            });
+            console.log("ini baris 1, sudah sampai disini");
+            a = 18 + 10;
+            console.log("Hasil Penjumlahan :" + a);
+        }
+
+        function changeText() {
+            const element = document.getElementById("Intro")
+            element.innerHTML = "FFFAAAAHHH";
+        }
+
+        function changeStyle() {
+            const element = document.getElementById("Tombol");
+            element.style.color = "red";
+            element.style.background = "yellow";
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 
